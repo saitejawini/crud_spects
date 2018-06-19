@@ -1,0 +1,46 @@
+<div class="panel panel-default font" style="width:50%; opacity: 0.9;" ng-init="showSpects()">
+	<div class="panel-heading">
+	  <p class="panel-title font" style="font-weight: 800; color: black;"><span style="color:#5bc0de;" 
+        class="glyphicon glyphicon-edit"> </span> <b>Edit Details</b></p>
+	</div>
+	<div class="panel-body" style="font-weight: 800; color: black;">
+		<form ng-submit="updateSpects()">
+    <div class="form-group">
+      <label for="brand">Brand</label>
+      <input type="text" class="form-control" id="brand" ng-model="spect.brand" value="spect.brand">
+    </div>
+            
+            
+    <div class="form-group">
+      <label for="id">Spects Id</label>
+      <input type="text" class="form-control" id="id" ng-model="spect.id" value="spect.id">
+    </div>
+            
+     
+   
+      <div class="form-group">
+      <label for="range">Range</label>
+      <input type="number" class="form-control" id="range" ng-model="spect.range" min="0" max="10000">
+        </div>
+            
+            
+      
+            <div class="form-group">
+      <label for="gender">Gender</label>
+     <select ng-model="spect.gender" class="form-control" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+    </div>
+            
+            
+            <div class="form-group">
+      <label for="phno">Phone Number</label>
+     <input type="text" class="form-control" id="phno" ng-model="spect.phno" placeholder="10 Digit Valid Number" pattern="[1-9]{1}[0-9]{9}" required>
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Update</button>
+    <a href="#/spects/update" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>

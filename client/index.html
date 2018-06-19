@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge; IE=11; IE=10; IE=9; IE=8; IE=7" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEAN CRUD</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/01/81/73/25/500_F_181732577_oJnsAUjFrebs7UfwnjDjYj9qFiVqkunP.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<style>
+         .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+        
+        .fa-facebook {
+  background: #3B5998;
+  color: white;
+            
+}  
+        .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+        .fa-instagram {
+  background: #125688;
+  color: white;
+}
+        
+        
+      
+        .pos{
+            position: fixed;
+            top:620px;
+            left: 100px;
+        }
+         .tweet{
+            position: fixed;
+            top:620px;
+            left:150px;
+        
+        }
+         .insta{
+            position: fixed;
+            top:620px;
+            left:200px;
+        }
+    .w3-lobster {
+    font-family: "Lobster", serif;
+}
+  
+    </style>
+</head>
+     
+<body class="bg">
+    <div class="w3-container w3-cyan"> 
+          <h1 class="text-muted font w3-lobster" style="font-size: 300%;font-family: "Lobster", serif" ;color: rgba(56, 56, 237, 0.81);><a href="#/">Blue Optical Store</a></h1>
+
+    </div>
+
+    <div class="container">
+   
+      
+	<div class="row">
+		
+        <div class="header">
+            
+           
+            <br>
+              <center>
+			<nav>
+			  <ul class="nav nav-pills pull-center">
+			    
+			         <li role="presentation" class="active" style="text-align:center;height:60px;width:200px"><a href="#/spects/create" class="font"> <span class="glyphicon glyphicon-plus" > </span>Add Models</a></li>
+        
+                  <li role="presentation" class="active" style="text-align:center;height:60px;width:250px"><a href="#/spects" class="font"><span class="glyphicon glyphicon-th-list"> </span>Show Models</a></li>
+                  
+                 <li role="presentation" class="active" style="text-align:center;height:60px;width:250px"><a href="#/spects/update" class="font"><span class="glyphicon glyphicon-repeat"> </span>Update Models</a></li>
+                  
+                   <li role="presentation" class="active" style="text-align:center;height:60px;width:250px"><a href="#/spects/delete" class="font"><span class="glyphicon glyphicon-trash"> </span>Delete Models</a></li>
+                </ul>
+			</nav>
+              </center>
+		</div>
+      
+        <center>
+        <div>
+		<div ng-view></div>
+		</div>
+        </center>
+           
+		
+
+	</div>
+    </div> 
+   
+       
+        
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/controllers.js"></script>
+
+</body>
+</html>

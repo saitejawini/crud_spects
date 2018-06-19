@@ -1,0 +1,64 @@
+ 
+<div class="panel panel-default font" style="width:50%; opacity: 0.8;" >
+	<div class="panel-heading" style="font-weight: 800; color: #2cc4f2;">
+        <p class="panel-title font"><span style="color:#2cc4f2;" class="glyphicon glyphicon-plus"> </span><b> Add Details</b></p>
+	</div>
+	<div class="panel-body" style="font-weight: 800; color: #1b1c1c; text-align:left" >
+		<form ng-submit="addSpects()">
+            
+            
+            
+    <div class="form-group">
+      
+        <label for="brand">Brand</label>
+        <select class="form-control" ng-model="spect.brand" class="form-control" id="brand" required>
+          <option style="font-weight: lighter;" value="">Select Brand</option>  
+          <option value="Ray-Ban">Ray-Ban</option>
+            <option value="Tory Burch">Tory Burch</option>
+            <option value="Versace">Versace</option>
+              <option value="Giorgio Armani">Giorgio Armani</option>
+              <option value="Others">Others</option>
+          </select>
+    </div>
+            
+            
+    <div class="form-group">
+      <label for="id">Spects Id</label>
+      <input type="text" class="form-control" id="id" ng-model="spect.id" placeholder="Enter Spects Id" required>
+    </div>
+   
+   
+            
+            
+      <div class="form-group">
+      <label for="range">Range</label>
+        <input type="number" class="form-control" id="range" ng-model="spect.range" min="0" max="10000" required>
+    </div>
+            
+            
+     
+            <div class="form-group">
+      <label for="gender">Gender</label>
+      <select ng-model="spect.gender" class="form-control"; id="gender"required>
+          <option style="font-weight: lighter;" value="">Select Gender</option>  
+          <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+    </div>
+            
+            
+            <div class="form-group">
+      <label for="cost">Phone Number</label>
+      <input type="text" class="form-control" id="phno" ng-model="spect.phno" placeholder="10 Digit Valid Number" pattern="[1-9]{1}[0-9]{9}" required>
+    </div>
+            
+            
+            
+    <button type="submit" style="colorcolor:#2cc4f2;" class="btn btn-default">Submit</button>
+    <a href="#/spects" class="btn btn-default"> Cancel</a>
+            
+</form>		
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br>

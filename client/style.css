@@ -1,0 +1,34 @@
+.nav 
+{
+   text-align: center;
+    display: inline-block;
+}
+
+.bg {
+
+    background-image: url("https://cf.shopee.com.my/file/575f3d475261c86c02a60e7319018227");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0f0e0e;
+}
+
+.boldy{
+    
+     font-weight: 800;
+    color: rgba(35, 205, 227, 0.76);
+}
+
+.font{
+    font-family: 'Monospace', serif;
+    font-size:130%;
+}
+
+.fontt{
+    font-family: 'Roboto Slab', serif;
+    font-size:100%;
+}
+.w3-cyan {
+    
+}

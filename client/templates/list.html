@@ -1,0 +1,36 @@
+ 
+<div class="panel panel-default font" ng-init="getSpects()" style="width: 80%; opacity: 0.8; font-weight: 600; color: black;">
+	<div class="panel-heading" style=" color: black;">
+	  <p class="panel-title font"><span style="color:#2badd4;" 
+class="glyphicon glyphicon-list"> </span> Wish List</p>
+	</div>
+	<div style="color: black;">
+		<table class="table" style="width:100%;" >
+			<thead>
+			<tr>
+			  <th>Brand</th>
+			  <th>Spects Id</th>
+			  <th>Range</th>
+                <th>Gender</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody style="font-size: 15px; font-family: monospace; font-weight: lighter;">
+			<tr ng-repeat="spect in spects" >
+			  <td>{{ spect.brand }}</td>
+			  <td>{{ spect.id }}</td>
+			  <td>{{ spect.range }}</td>
+                <td>{{ spect.gender }}</td>
+			  <td> 
+                  <a href="#/spects/{{spect._id}}/read" class="btn btn-info btn-md"> Show</a>  
+			  </td>
+			</tr>
+			</tbody>
+		</table>	
+        
+    </div>
+    
+</div>
+
+<a href="#/" class="btn btn-default"> Go Back</a>
+<br><br><br>

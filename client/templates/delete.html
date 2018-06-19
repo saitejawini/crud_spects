@@ -1,0 +1,30 @@
+ 
+<div class="panel panel-default font" ng-init="getSpects()" style="width: 60%; opacity: 0.8; font-weight: 600; color: #e25151;">
+	<div class="panel-heading" style=" color: black;">
+	  <p class="panel-title font"><span style="color:rgba(45, 242, 242, 0.92);" 
+class="glyphicon glyphicon-list"> </span> Delete List</p>
+	</div>
+	<div style="color: black;">
+		<table class="table" style="width:100%;" >
+			<thead>
+			<tr>
+			  <th>Brand</th>
+			  <th>Spects ID</th>
+                <th>Range</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody style="font-size: 15px; font-weight: lighter;">
+			<tr ng-repeat="spect in spects">
+			  <td>{{ spect.brand }}</td>
+			  <td>{{ spect.id }}</td>
+                <td>{{ spect.range }}</td>
+			  <td> 
+			  	<a ng-click="deleteSpects(spect._id)" class="btn btn-danger btn-md"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>	
+    </div>
+</div>
+<a href="#/" class="btn btn-default"> Go Back</a>

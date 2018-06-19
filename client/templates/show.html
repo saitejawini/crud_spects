@@ -1,0 +1,19 @@
+<div class="panel panel-default font" style="width:50%; opacity: 0.8;" ng-init="showSpects()">
+	<div class="panel-heading">
+        <p class="panel-title font" style="font-weight: 800; color: rgba(56, 201, 245, 0.85);"> <b>Show Details</b></p>
+	</div>
+	<div class="panel-body" style="font-weight: 800; color: rgba(56, 201, 245, 0.85);">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Brand: {{ spect.brand }}</label>
+		 <label class="form-control">Spects Id: {{ spect.id }}</label>
+		 <label class="form-control">Range: {{ spect.range }}</label>
+		 <label class="form-control">Gender: {{ spect.gender }}</label>
+		 <label class="form-control">Phone Number: {{ spect.phno }}</label>
+		
+        <a href="#/spects/{{spect._id}}/update" class="btn btn-default"> Update</a>
+		<a href="#/spects" class="btn btn-default"> Cancel</a>
+		</div>
+	</form>		
+    </div>
+</div>
